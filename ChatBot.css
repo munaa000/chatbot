@@ -1,0 +1,112 @@
+/* 챗봇 전체 컨테이너 */
+.chatbot-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #FFF5E4;
+  }
+  
+  /* 챗봇 콘텐츠 박스 */
+  .chatbot-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 150%;
+    max-width: 800px;
+    height: 600px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+  }
+  
+  /* 채팅 박스 (스크롤 가능) */
+  .chatbot-chatbox {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #FFD1D1 #FFF5E4;
+  }
+  
+  /* 채팅 메시지 스타일 */
+  .chatbot-message {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+  }
+  
+  .chatbot-message.bot {
+    justify-content: flex-start;
+  }
+  
+  .chatbot-message.user {
+    justify-content: flex-end;
+  }
+  
+  /* 챗봇 메시지 스타일 */
+  .chatbot-message-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .chatbot-bot-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  /* 메시지 말풍선 */
+  .chatbot-message-text {
+    max-width: 90%;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .chatbot-message.bot .chatbot-message-text {
+    background: #FFE3E1;
+    color: #2f2e2e;
+  }
+  
+  .chatbot-message.user .chatbot-message-text {
+    background: #FF9494;
+    color: #2f2e2e;
+  }
+  
+  /* 입력창 영역 */
+  .chatbot-input-area {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #eee;
+  }
+  
+  .chatbot-input-field {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background: #FFF5E4;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .chatbot-send-btn {
+    margin-left: 8px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 10px;
+    background: #FF9494;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .chatbot-send-btn:hover {
+    background: #FFD1D1;
+  }
+  

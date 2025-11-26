@@ -1,0 +1,29 @@
+/* 홈 전체 컨테이너 */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #FFF5E4; 
+  text-align: center;
+  padding: 20px;
+}
+
+/* 홈 타이틀 */
+.home-title {
+  font-size: 2.5rem;
+  color: #2f2e2e;
+  margin-bottom: 15px;
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+/* 홈 설명 텍스트 */
+.home-description {
+  font-size: 1.2rem;
+  color: #2f2e2e;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+/* 폰트가 없을 경우 대비 */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Nanum+Pen+Script&display=swap');
